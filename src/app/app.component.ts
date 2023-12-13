@@ -12,4 +12,8 @@ export class AppComponent {
     new WishItem('To Learn Vue')
   ];
   title = 'wishlist';
+
+  toggleItem(item : WishItem) {
+    item.isComplate = !item.isComplate;
+  }
 }

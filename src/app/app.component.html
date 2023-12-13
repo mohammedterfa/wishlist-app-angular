@@ -15,6 +15,7 @@
             type="checkbox"
             [checked]="item.isComplate"
             [attr.data-idnex]="ii"
+            (click)="toggleItem(item)"
             >
               {{ item.wishText }}
           </div>
